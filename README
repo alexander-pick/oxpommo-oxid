@@ -1,0 +1,21 @@
+== poMMo für OXID eShop 4.6 / 4.7 ==
+
+poMMo ist ein sehr gutes Newsletter Tool. Offiziell wird es seit 2008 nicht mehr weiter entwickelt, aber da es sehr populär ist und wesentlich leichter zu bedienen als PHPList hat sich die Community schon seit langer Zeit dieser Aufgabe angenommen.
+Ein aktueller Fork des Projekts findet sich z.B. hier:
+https://github.com/soonick/poMMo
+
+== Wie funktioniert das Modul? ==
+
+OXpoMMo überschreibt die send() Funktion der Newsletter Anmeldung und leitet die Anmeldung via Curl an die poMMo Installation weiter. Die OXID Opt-In Anmeldung wird über die Config deaktiviert damit der Shop keine eigene Mail für die Newsletter Anmeldung versendet, die User aber im Shop vorhanden sind.
+
+Die Signup und Opt-In Email erhält der Benutzer dann von Ihrer poMMo Installation 
+
+== Installation == 
+
+• In der Datei pbtnewsletter.php den define() an die gewünschte poMMo Signup URL anpassen (in der Regel http://<pfad und URL zu poMMo>/process.php
+• Modul hochladen und aktivieren • Fertig!
+
+== Lizenz ==
+
+Das Modul steht unter der GPL v3, der Lizenztext liegt bei. 
+Der Autor ist Alexander Pick – ap@pbt-media.com
